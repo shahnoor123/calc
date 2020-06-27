@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="inp">
+              <input type="text" class="myinp" id="myinp">
+            </div>
+            <div class="mybtn">
+                <button class="btn-col" onclick="clearResult()">C</button>
+                <button class="btn-col" onclick="getNub('%')">%</button>
+                <button  onclick="getNub('/')">/</button>
+                <button onclick="getNub('*')">x</button>
+
+            </div>
+            <div class="number1">
+                <button onclick="getNub('7')">7</button>
+                <button onclick="getNub('8')">8</button>
+                <button onclick="getNub('9')">9</button>
+                <button onclick="getNub('-')">-</button>
+
+            </div>
+            <div class="number1">
+                <button onclick="getNub('4')">4</button>
+                <button onclick="getNub('5')">5</button>
+                <button onclick="getNub('6')">6</button>
+                <button onclick="getNub('+')">+</button>
+
+            </div>
+            <div class="number1">
+                <button onclick="getNub('1')">1</button>
+                <button onclick="getNub('2')">2</button>
+                <button onclick="getNub('3')">3</button>
+            </div>
+                <button class="equalTo" onclick="getResult()">=</button>
+              
+
+           
+            <div class="number">
+                <button class="zero" onclick="getNub('0')">0</button>
+                <button class="dot" onclick="getNub('.')">.</button>
+             
+
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+    <script src="app.js"></script>
+</html>
